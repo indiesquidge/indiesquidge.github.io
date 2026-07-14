@@ -1,0 +1,10 @@
+#particleContainer {
+  display: flex;
+}
+
+.particleHeader {
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  display: inline-block;
+}

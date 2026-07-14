@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Austin Wood</title>
-  </head>
-  <body>
-    <h1>Austin Wood</h1>
-  </body>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: lightskyblue;
+    border-radius: 50%;
+    animation: fadeOut 1000ms forwards;
+  }
+</style>
+
+<head>
+  <title>Austin Wood</title>
+</head>
+
+<body>
+  <div id="particleContainer">
+    <h1 class="particleHeader">Austin Wood</h1>
+  </div>
+</body>
+
+<script type="text/javascript" src="./index.js"></script>
+
 </html>
