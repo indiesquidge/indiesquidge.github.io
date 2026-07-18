@@ -4,23 +4,14 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 <style>
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-
-    to {
-      opacity: 0;
-    }
-  }
-
   .particle {
     position: absolute;
     width: 10px;
     height: 10px;
     background: lightskyblue;
     border-radius: 50%;
-    animation: fadeOut forwards;
+    animation: fadeToTransparent forwards;
+    transform: translate(-50%, -50%);
   }
 </style>
 
