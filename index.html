@@ -4,13 +4,22 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 <style>
+  @keyframes fromCenter {
+    from {
+      top: 50%;
+      left: 50%;
+    }
+  }
+
   .particle {
     position: absolute;
     width: 10px;
     height: 10px;
     background: lightskyblue;
     border-radius: 50%;
-    animation: fadeToTransparent forwards;
+    animation:
+      fadeToTransparent var(--fade-duration) forwards,
+      fromCenter 500ms;
     transform: translate(-50%, -50%);
   }
 </style>

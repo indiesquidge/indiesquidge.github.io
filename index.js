@@ -26,7 +26,7 @@ particleHeader.addEventListener('click', (event) => {
     particle.classList.add('particle');
     particle.style.left = Math.random() * 100 + '%';
     particle.style.top = Math.random() * 100 + '%';
-    particle.style.animationDuration = FADE_OUT_DURATION + 'ms';
+    particle.style.setProperty('--fade-duration', FADE_OUT_DURATION + 'ms');
 
     particleHeader.appendChild(particle);
 
