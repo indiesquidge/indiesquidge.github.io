@@ -6,14 +6,14 @@
 <style>
   @keyframes fromCenter {
     from {
-      transform: translate(0px, 0px);
+      transform: translate(-50%, -50%);
     }
   }
 
   .particle {
     position: absolute;
-    inset: 0;
-    margin: auto;
+    left: var(--click-x);
+    top: var(--click-y);
     width: 10px;
     height: 10px;
     background: lightskyblue;

@@ -29,8 +29,14 @@ particleHeader.addEventListener('click', (event) => {
     const x = Math.random() * MAGNITUDE * xSign;
     const y = Math.random() * MAGNITUDE * ySign;
 
+    const clickX = event.clientX - particleHeader.offsetLeft;
+    const clickY = event.clientY - particleHeader.offsetTop;
+
     particle.classList.add('particle');
     particle.style.transform = `translate(${x}px, ${y}px)`;
+
+    particle.style.setProperty('--click-x', clickX + 'px');
+    particle.style.setProperty('--click-y', clickY + 'px');
     particle.style.setProperty('--fade-duration', FADE_OUT_DURATION + 'ms');
 
     particleHeader.appendChild(particle);
